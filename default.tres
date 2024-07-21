@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://idu576gadv86"]
+
+[ext_resource type="FontFile" uid="uid://ciwkl20a5mvt7" path="res://FFFFORWA.TTF" id="1_8qaur"]
+
+[resource]
+default_font = ExtResource("1_8qaur")
+/fonts/nn = ExtResource("1_8qaur")

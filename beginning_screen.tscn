@@ -1,0 +1,108 @@
+[gd_scene load_steps=13 format=3 uid="uid://crf4e1kbmlvt2"]
+
+[ext_resource type="Script" path="res://beginning_screen.gd" id="1_ulypg"]
+[ext_resource type="Theme" uid="uid://idu576gadv86" path="res://default.tres" id="2_cjh17"]
+[ext_resource type="Texture2D" uid="uid://d360uykyt2a0p" path="res://Gerald's Keys/Keys/Blank-Md-Key.png" id="3_6yol3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jowh0"]
+texture = ExtResource("3_6yol3")
+region_rect = Rect2(0, 0, 48, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnkvp"]
+texture = ExtResource("3_6yol3")
+region_rect = Rect2(0, 0, 48, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ukin6"]
+texture = ExtResource("3_6yol3")
+region_rect = Rect2(48, 0, 48, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cyvrv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k8sk7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7jidt"]
+texture = ExtResource("3_6yol3")
+region_rect = Rect2(0, 0, 48, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r585s"]
+texture = ExtResource("3_6yol3")
+region_rect = Rect2(0, 0, 48, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4yfqq"]
+texture = ExtResource("3_6yol3")
+region_rect = Rect2(48, 0, 48, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3wgs2"]
+
+[node name="Startscreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ulypg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.976471, 0.776471, 0, 1)
+
+[node name="Instructions" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 423.0
+theme = ExtResource("2_cjh17")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 63
+text = "uvuvjhhjjh"
+
+[node name="next" type="Button" parent="."]
+layout_mode = 0
+offset_left = 727.0
+offset_top = 276.0
+offset_right = 1106.0
+offset_bottom = 450.0
+theme = ExtResource("2_cjh17")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_jowh0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_dnkvp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ukin6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyvrv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k8sk7")
+text = ">"
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 276.0
+offset_right = 398.0
+offset_bottom = 450.0
+theme = ExtResource("2_cjh17")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_7jidt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_r585s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4yfqq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3wgs2")
+text = "<"
+text_direction = 3
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.291
+anchor_top = 0.792
+anchor_right = 0.291
+anchor_bottom = 0.792
+offset_left = -0.231995
+offset_top = -0.216064
+offset_right = 442.768
+offset_bottom = 103.784
+theme = ExtResource("2_cjh17")
+theme_override_font_sizes/font_size = 59
+text = "Start"
+
+[connection signal="pressed" from="next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

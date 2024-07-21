@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfhyglpu3ujqi"]
+
+[ext_resource type="Script" path="res://Calculator.gd" id="1_0babi"]
+[ext_resource type="Script" path="res://A.gd" id="2_wcnqr"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 384.0
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0babi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 1146.0
+offset_bottom = 650.0
+color = Color(0.0142752, 0.0142752, 0.0142752, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 46.0
+offset_right = 572.0
+offset_bottom = 159.0
+theme_override_font_sizes/font_size = 78
+text = "Answer"
+
+[node name="A" type="Button" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 230.0
+offset_right = 221.0
+offset_bottom = 381.0
+theme_override_font_sizes/font_size = 78
+text = "A"
+script = ExtResource("2_wcnqr")
+
+[node name="A2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 232.0
+offset_right = 517.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 78
+text = "B"
+
+[node name="A3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 621.0
+offset_top = 234.0
+offset_right = 789.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 78
+text = "C"
+
+[node name="D" type="Button" parent="."]
+layout_mode = 0
+offset_left = 897.0
+offset_top = 240.0
+offset_right = 1065.0
+offset_bottom = 391.0
+theme_override_font_sizes/font_size = 78
+text = "D"
+
+[connection signal="pressed" from="A" to="." method="_on_a_pressed"]
+[connection signal="pressed" from="A" to="A" method="_on_pressed"]

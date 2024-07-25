@@ -21,5 +21,7 @@ layout_mode = 0
 offset_right = 1120.0
 offset_bottom = 536.0
 theme = ExtResource("1_y4y53")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 150
-text = "Congrats You Got It!"
+text = "Almost 
+Ready!!!"

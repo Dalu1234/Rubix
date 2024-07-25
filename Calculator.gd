@@ -17,7 +17,7 @@ var adder = 1
 var subtracter = 1
 var multiplier = 1
 var divider = 1
-var random_number = 3 #randi() % 1001
+var random_number = randi() % 1001
 var numbers = []
 var start_time: int
 var end_time: int

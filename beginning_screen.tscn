@@ -51,8 +51,10 @@ color = Color(0.976471, 0.776471, 0, 1)
 
 [node name="Instructions" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_right = 1149.0
-offset_bottom = 423.0
+offset_left = 46.0
+offset_top = 25.0
+offset_right = 1094.0
+offset_bottom = 268.0
 theme = ExtResource("2_cjh17")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 63

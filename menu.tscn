@@ -1,0 +1,189 @@
+[gd_scene load_steps=22 format=3 uid="uid://cpslhnaejmrwn"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_pdxdu"]
+[ext_resource type="Texture2D" uid="uid://dggx6uap7iavk" path="res://Gerald's Keys/Keys/Blank-Lg-Key.png" id="2_s505h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ph7no"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 65, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lotwn"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 65, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_64nnl"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(64, 0, 64, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k2atf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f8pyf"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 64, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_exh0l"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 64, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_alau5"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(64, 0, 64, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_okhxy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nx66b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mb83y"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 64, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nfuxb"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 64, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6i7yr"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(64, 0, 64, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7xhl5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_10274"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3sxt4"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 64, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nhajc"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(0, 0, 64, 37)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bsd78"]
+content_margin_left = 16.0
+content_margin_top = 25.0
+content_margin_right = 16.0
+content_margin_bottom = 25.0
+texture = ExtResource("2_s505h")
+region_rect = Rect2(64, 0, 64, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sok8j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_txwl1"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchor_right = 1.111
+anchor_bottom = 1.111
+offset_right = 16.1279
+offset_bottom = 16.072
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pdxdu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+light_mask = 16
+visibility_layer = 16
+layout_mode = 2
+offset_left = 8.0
+offset_right = 1160.0
+offset_bottom = 656.0
+color = Color(0.976471, 0.776471, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 8.0
+offset_right = 1024.0
+offset_bottom = 768.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxTexture_ph7no")
+theme_override_styles/hover = SubResource("StyleBoxTexture_lotwn")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_64nnl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k2atf")
+text = "New Game"
+
+[node name="Continue" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxTexture_f8pyf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_exh0l")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_alau5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_okhxy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nx66b")
+text = "Continue"
+
+[node name="Tutorial" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxTexture_mb83y")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nfuxb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6i7yr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7xhl5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_10274")
+text = "Tutorial"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxTexture_3sxt4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nhajc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_bsd78")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sok8j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_txwl1")
+text = "Quit
+"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,14 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721538637
+::res://::1721829112
 4-Key.png::CompressedTexture2D::4183508698126637538::1720918132::1720918132::1::::<><>::
 A.gd::GDScript::-1::1720450926::0::1::::<>Button<>::
-beginning_screen.gd::GDScript::-1::1720881596::0::1::::<>Control<>::
-beginning_screen.tscn::PackedScene::5978142915085975213::1721538279::0::1::::<><>::res://beginning_screen.gd
-Calculator.gd::GDScript::-1::1721537986::0::1::::<>Control<>::
-Calculator.tscn::PackedScene::2753284070627346668::1721538279::0::1::::<><>::res://Calculator.gd<>uid://idu576gadv86::::res://default.tres<>uid://tsak4o7t812q::::res://Gerald's Keys/Keys/Pixel Art Buttons.png<>uid://c1pwjd5kapt0t::::res://Gerald's Keys/Keys/A-Key.png<>uid://byuywgjvehfqt::::res://Gerald's Keys/Keys/B-Key.png<>uid://bdo4pf8h8hbg::::res://Gerald's Keys/Keys/C-Key.png<>uid://d2qr0sh2s57ou::::res://Gerald's Keys/Keys/D-Key.png
-default.tres::Theme::568973524947811949::1720918362::0::1::::<><>::
+beginning_screen.gd::GDScript::-1::1721547519::0::1::::<>Control<>::
+beginning_screen.tscn::PackedScene::5978142915085975213::1721701492::0::1::::<><>::res://beginning_screen.gd<>uid://idu576gadv86::::res://default.tres<>uid://d360uykyt2a0p::::res://Gerald's Keys/Keys/Blank-Md-Key.png
+Calculator.gd::GDScript::-1::1721618527::0::1::::<>Control<>::
+Calculator.tscn::PackedScene::2753284070627346668::1721701492::0::1::::<><>::res://Calculator.gd<>uid://idu576gadv86::::res://default.tres<>uid://tsak4o7t812q::::res://Gerald's Keys/Keys/Pixel Art Buttons.png<>uid://c1pwjd5kapt0t::::res://Gerald's Keys/Keys/A-Key.png<>uid://byuywgjvehfqt::::res://Gerald's Keys/Keys/B-Key.png<>uid://bdo4pf8h8hbg::::res://Gerald's Keys/Keys/C-Key.png<>uid://d2qr0sh2s57ou::::res://Gerald's Keys/Keys/D-Key.png
+default.tres::Theme::568973524947811949::1721701492::0::1::::<><>::uid://ciwkl20a5mvt7::::res://FFFFORWA.TTF
 FFFFORWA.TTF::FontFile::5380396697531545722::1721538637::1721538637::1::::<><>::
 icon.svg::CompressedTexture2D::1357982578395579305::1720399841::1720399846::1::::<><>::
+winpage.tscn::PackedScene::2766968474905194977::1721701493::0::1::::<><>::uid://idu576gadv86::::res://default.tres
 ::res://Gerald's Keys/::1720918108
 KeySample.png::CompressedTexture2D::7373188724302140726::1720918082::1720918108::1::::<><>::
 Readme.txt::TextFile::-1::1720918082::0::1::::<><>::

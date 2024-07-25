@@ -1,6 +1,9 @@
-Button
-RichTextLabel
 ColorRect
+Button
+VBoxContainer
+MarginContainer
+PanelContainer
+RichTextLabel
 TileMap
 Sprite2D
 Timer

@@ -1,5 +1,5 @@
-res://beginning_screen.tscn::83805bc6a3629c0ffd521a11752dc980::1721856534::res://.godot/exported/133200997/export-5c484d5649d1de821a02aa2f10fc396b-beginning_screen.scn
-res://Calculator.tscn::cfad3d30d1fa019f54b6d26dba42e28e::1721856534::res://.godot/exported/133200997/export-4fa2a169bc3085564f6cf60f30cd4a84-Calculator.scn
-res://default.tres::c3968ea75f0dd2b80a7e7936c66272b6::1721829330::res://.godot/exported/133200997/export-576b18c35431082105bed622f9e1d8fa-default.res
-res://menu.tscn::368fd2de82e2e6022639f842d2ffcad9::1721856534::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
-res://winpage.tscn::545b9ba7e45b08f8eb66b03f59117e43::1721856534::res://.godot/exported/133200997/export-e0fe74e6bb3325dcb0e3aa2dc918c0f8-winpage.scn
+res://beginning_screen.tscn::7d2fa7eab0e353b0d121181b5ab45f05::1721954570::res://.godot/exported/133200997/export-5c484d5649d1de821a02aa2f10fc396b-beginning_screen.scn
+res://Calculator.tscn::8d22b619e5c30303bd8373afe16efd10::1721954570::res://.godot/exported/133200997/export-4fa2a169bc3085564f6cf60f30cd4a84-Calculator.scn
+res://default.tres::c3968ea75f0dd2b80a7e7936c66272b6::1721919382::res://.godot/exported/133200997/export-576b18c35431082105bed622f9e1d8fa-default.res
+res://menu.tscn::2d541c8612d61a70da393b23ee9aa227::1721954570::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
+res://winpage.tscn::2ac93acd832f9b8f51516788edc5d31f::1721954615::res://.godot/exported/133200997/export-e0fe74e6bb3325dcb0e3aa2dc918c0f8-winpage.scn

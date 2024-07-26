@@ -21,7 +21,7 @@ func _on_tutorial_pressed():
 
 func _on_continue_pressed():
 	pass # Replace with function body.
-
+pass
 
 func _on_start_pressed():
 	get_tree().change_scene_to_file("res://Calculator.tscn")

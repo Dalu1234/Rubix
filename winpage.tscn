@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://bfolti5upt7cv"]
+[gd_scene load_steps=5 format=3 uid="uid://bfolti5upt7cv"]
 
+[ext_resource type="Script" path="res://stats.gd" id="1_53hnq"]
 [ext_resource type="Theme" uid="uid://idu576gadv86" path="res://default.tres" id="1_y4y53"]
+[ext_resource type="Texture2D" uid="uid://dhhx3s3didhuh" path="res://Assets/GUI.png" id="2_sj4l1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxfqe"]
+texture = ExtResource("2_sj4l1")
+region_rect = Rect2(-1, 95, 50, 36)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_53hnq")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -16,12 +23,22 @@ offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0.603922, 0.298039, 0.360784, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 1120.0
-offset_bottom = 536.0
+offset_left = -56.0
+offset_top = -40.0
+offset_right = 1216.0
+offset_bottom = 712.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gxfqe")
+
+[node name="Stats" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 120.0
+offset_right = 1040.0
+offset_bottom = 544.0
 theme = ExtResource("1_y4y53")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/normal_font_size = 150
-text = "Almost 
-Ready!!!"
+theme_override_font_sizes/normal_font_size = 47
+
+[node name="Waiter" type="Timer" parent="."]

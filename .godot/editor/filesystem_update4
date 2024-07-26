@@ -1,6 +1,9 @@
-res://default.tres
-res://menu.tscn
 res://Calculator.tscn
+res://default.tres
 res://beginning_screen.tscn
 res://winpage.tscn
+res://menu.tscn
+res://Calculator.gd
 res://menu.gd
+res://stats.gd
+res://global.gd

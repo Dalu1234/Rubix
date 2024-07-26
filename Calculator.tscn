@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://Calculator.gd" id="1_0babi"]
 [ext_resource type="Theme" uid="uid://idu576gadv86" path="res://default.tres" id="2_k5mtt"]
-[ext_resource type="Texture2D" uid="uid://tsak4o7t812q" path="res://Gerald's Keys/Keys/Pixel Art Buttons.png" id="2_mn64b"]
-[ext_resource type="Texture2D" uid="uid://c1pwjd5kapt0t" path="res://Gerald's Keys/Keys/A-Key.png" id="3_cyjbh"]
-[ext_resource type="Texture2D" uid="uid://byuywgjvehfqt" path="res://Gerald's Keys/Keys/B-Key.png" id="4_dnm3y"]
-[ext_resource type="Texture2D" uid="uid://bdo4pf8h8hbg" path="res://Gerald's Keys/Keys/C-Key.png" id="5_7bh3n"]
-[ext_resource type="Texture2D" uid="uid://d2qr0sh2s57ou" path="res://Gerald's Keys/Keys/D-Key.png" id="6_05b58"]
+[ext_resource type="Texture2D" uid="uid://tsak4o7t812q" path="res://Assets/Gerald's Keys/Keys/Pixel Art Buttons.png" id="2_mn64b"]
+[ext_resource type="Texture2D" uid="uid://c1pwjd5kapt0t" path="res://Assets/Gerald's Keys/Keys/A-Key.png" id="3_cyjbh"]
+[ext_resource type="Texture2D" uid="uid://byuywgjvehfqt" path="res://Assets/Gerald's Keys/Keys/B-Key.png" id="4_dnm3y"]
+[ext_resource type="Texture2D" uid="uid://bdo4pf8h8hbg" path="res://Assets/Gerald's Keys/Keys/C-Key.png" id="5_7bh3n"]
+[ext_resource type="Texture2D" uid="uid://d2qr0sh2s57ou" path="res://Assets/Gerald's Keys/Keys/D-Key.png" id="6_05b58"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_41tkh"]
 content_margin_left = 90.0

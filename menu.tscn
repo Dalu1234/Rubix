@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://cpslhnaejmrwn"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_pdxdu"]
-[ext_resource type="Texture2D" uid="uid://dggx6uap7iavk" path="res://Gerald's Keys/Keys/Blank-Lg-Key.png" id="2_s505h"]
+[ext_resource type="Texture2D" uid="uid://dggx6uap7iavk" path="res://Assets/Gerald's Keys/Keys/Blank-Lg-Key.png" id="2_s505h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ph7no"]
 content_margin_left = 16.0

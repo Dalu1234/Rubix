@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://beginning_screen.gd" id="1_ulypg"]
 [ext_resource type="Theme" uid="uid://idu576gadv86" path="res://default.tres" id="2_cjh17"]
-[ext_resource type="Texture2D" uid="uid://d360uykyt2a0p" path="res://Gerald's Keys/Keys/Blank-Md-Key.png" id="3_6yol3"]
+[ext_resource type="Texture2D" uid="uid://d360uykyt2a0p" path="res://Assets/Gerald's Keys/Keys/Blank-Md-Key.png" id="3_6yol3"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jowh0"]
 texture = ExtResource("3_6yol3")

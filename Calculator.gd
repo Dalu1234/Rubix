@@ -24,11 +24,12 @@ var end_time: int
 var running: bool = false
 
 func start():
-
+	print("Timer started")
 	start_time = Time.get_ticks_msec()
 	running = true
 
 func stop():
+	print("Timer stopped")
 	end_time = Time.get_ticks_msec()
 	running = false
 
@@ -39,6 +40,7 @@ func get_elapsed_time() -> int:
 		return end_time - start_time
 
 func _ready():
+	start()  # Ensure the timer starts when the scene is ready
 	update_randomnum(str(random_number))
 	print("gsjhjsjshjshbxs")
 	var stopwatch = Rubix.new()
@@ -80,6 +82,7 @@ class Rubix:
 
 func _process(delta):
 	pass
+
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed:
@@ -92,12 +95,13 @@ func _input(event):
 					_on_c_pressed()
 				KEY_D:
 					_on_d_pressed()
+
 func _on_a_pressed():
 	num += adder
 	print(num)
 	numbers.append(num)
 	adder += 1
-	print("This is num: %d" % num) 
+	print("This is num: %d" % num)
 	var bowier = str(num)
 	update_rich_text(bowier)
 	update_counter(str(adder))
@@ -108,7 +112,7 @@ func _on_b_pressed():
 	print(num)
 	numbers.append(num)
 	subtracter += 1
-	print("This is num: %d" % num) 
+	print("This is num: %d" % num)
 	var bowier = str(num)
 	update_rich_text(bowier)
 	update_counter(str(subtracter))
@@ -119,7 +123,7 @@ func _on_c_pressed():
 	print(num)
 	numbers.append(num)
 	multiplier += 1
-	print("This is num: %d" % num) 
+	print("This is num: %d" % num)
 	var bowier = str(num)
 	update_rich_text(bowier)
 	update_counter(str(multiplier))
@@ -130,7 +134,7 @@ func _on_d_pressed():
 	print(num)
 	numbers.append(num)
 	divider += 1
-	print("This is num: %d" % num) 
+	print("This is num: %d" % num)
 	var bowier = str(num)
 	update_rich_text(bowier)
 	update_counter(str(divider))
@@ -148,8 +152,8 @@ func update_randomnum(new_text: String):
 		randnumber.clear()
 		randnumber.add_text(new_text)
 	else:
-		print("Answer node is null")
-	
+		print("Randnumber node is null")
+
 func update_counter(new_text: String):
 	if new_text == str(adder):
 		addcounter.clear()
@@ -164,7 +168,8 @@ func update_counter(new_text: String):
 		divcounter.clear()
 		divcounter.add_text(new_text)
 	else:
-		print("a counter node is null")
+		print("A counter node is null")
+
 func wait_and_check():
 	check_timer.start(0.5)  # Start the timer with a 0.5-second wait
 	await check_timer.timeout    # Wait for the timer to timeout
@@ -172,14 +177,20 @@ func wait_and_check():
 
 func check_end_game():
 	if num == random_number:
-		stop()
+		stop()  # Ensure the timer stops when the game ends
+		var tree = get_tree()
+		if tree:
+			tree.change_scene_to_file("res://winpage.tscn")
+		else:
+			print("get_tree() returned null")
 		print("Stopwatch stopped...")
 		var elapsed_time = get_elapsed_time()
+		Global.cob = str("Elapsed time in seconds: %f" % (elapsed_time / 1000.0)) # Assign elapsed_time to the global variable cob
+		print(Global.cob)
 		print("Elapsed time in milliseconds: %d" % elapsed_time)
 		print("Elapsed time in seconds: %f" % (elapsed_time / 1000.0))
 		var Congratulations = "Congrats You Got It!!!"
-		get_tree().change_scene_to_file("res://winpage.tscn")
-		update_rich_text(Congratulations)
+		print("bob")
 		disable_buttons()
 
 func disable_buttons():

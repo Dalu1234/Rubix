@@ -1,3 +1,6 @@
+Timer
+Panel
+Sprite2D
 ColorRect
 Button
 VBoxContainer
@@ -5,8 +8,6 @@ MarginContainer
 PanelContainer
 RichTextLabel
 TileMap
-Sprite2D
-Timer
 Label
 Camera2D
 Window
